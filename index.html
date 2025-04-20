@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовая система с подсказками</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="test-app">
+            <div class="header">
+                <h1>Тестовая система с подсказками</h1>
+                <p>Проверьте свои знания и используйте подсказки при необходимости</p>
+            </div>
+            
+            <div class="section-selector">
+                <button class="section-btn active" onclick="selectSection('part1')">Первая часть</button>
+                <button class="section-btn" onclick="selectSection('part2')">Вторая часть</button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="test-content">
+                <div id="questionsContainer"></div>
+                <button class="submit-btn" onclick="checkAnswers()">Проверить ответы</button>
+                <div id="testResult" class="result"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © 2023 Тестовая система. Все права защищены.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
